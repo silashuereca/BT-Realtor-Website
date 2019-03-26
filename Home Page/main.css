@@ -5,13 +5,33 @@ body {
 
 header {
   position: fixed;
+  z-index: 2;
 }
 
 header ul li {
   list-style: none;
+  margin: 40px;
 }
 
 header ul li a {
   text-decoration: none;
   cursor: pointer;
+  color: black;
+}
+
+#header-image {
+  position: relative; 
+  display: inline-block;
+}
+
+#header-image img {
+  width: 100%;
+}
+
+#header-image:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3000px rgba(46, 49, 49, 0.6) inset;
 }
