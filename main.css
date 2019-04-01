@@ -143,9 +143,8 @@ header nav ul li a {
 }
 
 .image-container {
-  margin-top: -10%;
+  margin-top: 5%;
   position: absolute;
-  clip-path: inset(25% 0 0 0);
   width: 100%;
   overflow-y: hidden;
 }
