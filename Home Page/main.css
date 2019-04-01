@@ -12,13 +12,24 @@ body {
   padding: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#logo {
+  width: 13vw;
+  margin: 10px 0 0 10px;
 }
 
-#logo {
-  width: 150px;
+.menu-bars {
+  display: none;
+  height: 30px;
+  padding: 1%;
+  padding-right: 40px;
+  color: white;
+  text-align: right;
+  font-size: 25px;
+  margin: -0.1em 3% 0 0;
+}
+
+.icon {
+  cursor: pointer;
 }
 
 header {
@@ -27,24 +38,30 @@ header {
   z-index: 2;
 }
 
-header ul {
-  display: flex;
-  float: right;
+header nav {
+  position: absolute;
+  width: 100%;
+  margin-top: -10%;
+}
+
+header nav ul {
+  text-align: right;
   margin: 0 40px 0 0;
 }
 
-header ul li {
+header nav ul li {
+  display: inline-block;
   list-style: none;
-  margin: 30px 0 30px 15px;
+  margin: 0 0 30px 15px;
   padding: 15px;
 }
 
-header ul li a {
+header nav ul li a {
   text-decoration: none;
   cursor: pointer;
   color: white;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
@@ -53,34 +70,37 @@ header ul li a {
   color: gray;
 }
 
-.contact {
+#contact {
   border: 1px solid white;
   padding: 10px;
 }
 
-.contact:hover {
+#contact:hover {
   color: black;
   background-color: white;
 }
 
-#header-image {
-  position: relative; 
+#header-image { 
+  position: relative;
   display: inline-block;
   width: 100%;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 #header-image img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 .intro-text {
   text-align: center;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 100px;
+  font-size: 7vw;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
@@ -88,11 +108,11 @@ header ul li a {
 .britta-abode {
   text-align: center;
   position: absolute;
-  top: 52%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 40px;
+  font-size: 3vw;
   font-family: 'Allura', cursive;
   font-weight: 100;
 }
@@ -102,5 +122,52 @@ header ul li a {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: 0 3000px rgba(46, 49, 49, 0.7) inset;
+  box-shadow: 0 1000px rgba(46, 49, 49, 0.6) inset;
+}
+
+#livable-container {
+  width: 100%;
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+
+#livable-container div {
+  width: 60%;
+  margin: auto;
+}
+
+.livable-spaces {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.image-container {
+  margin-top: -10%;
+  position: absolute;
+  clip-path: inset(25% 0 0 0);
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+
+@media only screen and (min-device-width: 270px) and (max-device-width: 1010px) {
+  #logo {
+    width: 13vw;
+  }
+  header nav ul {
+    display: none;
+  }
+  .menu-bars {
+    display: block;
+  }
+  .livable-spaces {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
 }
