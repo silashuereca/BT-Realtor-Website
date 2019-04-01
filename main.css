@@ -38,7 +38,7 @@ body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   display: block;
   transition: 0.3s;
@@ -201,7 +201,7 @@ header nav ul li a {
 }
 
 
-@media only screen and (min-device-width: 270px) and (max-device-width: 1010px) {
+@media only screen and (min-device-width: 260px) and (max-device-width: 1010px) {
   #logo {
     width: 13vw;
   }
