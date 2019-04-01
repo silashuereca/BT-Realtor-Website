@@ -21,11 +21,13 @@ body {
   display: none;
   height: 30px;
   padding: 1%;
-  padding-right: 40px;
+  padding: 5% 5%;
   color: white;
   text-align: right;
   font-size: 25px;
   margin: -0.1em 3% 0 0;
+  width: 100%;
+  background-color: black;
 }
 
 .icon {
@@ -33,20 +35,21 @@ body {
 }
 
 header {
+  display: flex;
   position: absolute;
   width: 100%;
   z-index: 2;
 }
 
 header nav {
-  position: absolute;
   width: 100%;
-  margin-top: -10%;
+  height: 100%;
 }
 
 header nav ul {
   text-align: right;
   margin: 0 40px 0 0;
+  background-color: gray;
 }
 
 header nav ul li {
@@ -157,6 +160,12 @@ header nav ul li a {
 @media only screen and (min-device-width: 270px) and (max-device-width: 1010px) {
   #logo {
     width: 13vw;
+  }
+  header {
+    height: 100%;
+  }
+  header nav {
+    display: flex;
   }
   header nav ul {
     display: none;
