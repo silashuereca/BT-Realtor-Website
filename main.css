@@ -175,11 +175,11 @@ header nav ul li a {
 #livable-container {
   width: 100%;
   text-align: center;
-  margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
 }
 
 #livable-container div {
-  width: 60%;
+  width: 75%;
   margin: auto;
 }
 
@@ -188,6 +188,21 @@ header nav ul li a {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
+.intro-three-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin: auto;
+  width: 75%;
+}
+
+.intro-three-photos img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
 
 .home-one {
   margin-top: 5%;
