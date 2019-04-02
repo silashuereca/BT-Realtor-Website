@@ -238,5 +238,11 @@ header nav ul li a {
     font-size: 25px;
     font-weight: 300;
   }
-
+  .intro-three-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: auto;
+    width: 90%;
+  }
 }
