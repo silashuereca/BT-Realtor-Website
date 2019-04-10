@@ -1,58 +1,17 @@
 
 
 /*designer and dreamer header text*/
-.designer-dreamer {
-  position: absolute;
-  text-align: center;
-  top: 35vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 10vw;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  line-height: 0.5em;
+.about-renovating {
+  line-height: 1em;
 }
 
-.about-britta-abode {
+.about__is_my_passion {
   text-align: center;
   position: relative;
-  color: gray;
+  color: lightgray;
   font-size: 5vw;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 } 
 
-#about-header-image { 
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
 
-#about-header-image img {
-  width: 100%;
-  vertical-align: bottom;
-  height: 600px;
-  object-fit: none;
-}
-
-#about-header-image:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 2000px rgba(36, 35, 35, 0.8) inset;
-}
-
-@media only screen and (min-device-width: 600px) and (max-device-width: 1010px) {
-}
-
-@media only screen and (min-device-width: 200px) and (max-device-width: 900px) {
-  .designer-dreamer {
-    line-height: 0.7em;
-  }
-
-  .about-britta-abode {
-    font-size: 6vw;
-  }
-}
