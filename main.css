@@ -250,7 +250,7 @@ header nav ul li a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   grid-template-rows: 1fr 1fr;
-  margin: 4% 14% 20px 14%;
+  margin: 20px 14% 20px 14%;
 }
 
 .venice-wrapper img {
@@ -326,6 +326,29 @@ header nav ul li a {
   height: 100%;
 }
 
+footer {
+  width: 100%;
+  height: 35vh;
+  background-color: #576574;
+}
+
+footer div {
+  width: 100%;
+  padding: 6% 0 0 0;
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+
+footer div ul {
+  list-style: none;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
 @media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
   #logo {
     width: 13vw;
@@ -357,21 +380,40 @@ header nav ul li a {
   .venice-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 4% 5% 20px 5%;
   }
 
-  .pic-1 {
+  .venice-pic-1 {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
   }
 
+  .home-one-bottom {
+    margin: 0 5% 0 5%;
+  }
+
   .nw-69th-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin: 4% 14% 20px 14%;  
+    grid-gap: 10px;
+    margin: 4% 5% 10px 5%;  
+  }
+
+  .nw-69th-pic-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 100%;
+  }
+
+  .nw-69th-pic-1 {
+    height: 20em;
+  }
+  
+  .nw-69th-pic-2 {
+    height: 20em;
   }
 
 
