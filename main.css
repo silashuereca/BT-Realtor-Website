@@ -6,6 +6,8 @@
 /*font-family: 'Lato', sans-serif*/
 @import url('https://fonts.googleapis.com/css?family=Allura');
 
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,400');
+/* footer text */
 
 body {
   margin: 0;
@@ -118,12 +120,12 @@ header nav ul li a {
   color: gray;
 }
 
-#contact {
+.contact {
   border: 1px solid white;
   padding: 10px;
 }
 
-#contact:hover {
+.contact:hover {
   color: black;
   background-color: white;
 }
@@ -327,9 +329,12 @@ header nav ul li a {
 }
 
 footer {
+  margin-top: 7em;
   width: 100%;
   height: 35vh;
   background-color: #576574;
+  font-family: "Assistant", sans-serif;
+  font-weight: 200;
 }
 
 footer div {
@@ -337,16 +342,31 @@ footer div {
   padding: 6% 0 0 0;
   text-align: center;
   color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
 }
 
 footer div ul {
+  display: flex;
   list-style: none;
   margin-top: 0;
+  margin: auto;
   padding-top: 0;
   padding-left: 0;
-  width: 100%;
+  width: 35%;
+}
+
+footer div ul li {
+  margin: auto;
+}
+
+footer div ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+footer p {
+  margin-top: 2em;
 }
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
