@@ -406,20 +406,6 @@ footer p {
     margin-top: 10px;
   }
 
-  /* .venice-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 4% 5% 20px 5%;
-  } */
-
-  /* .venice-pic-1 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  } */
-
   .home-one-bottom {
     margin: 10px 5% 0 5%;
   }
@@ -428,20 +414,6 @@ footer p {
     display: inline-block;
     margin: 4% 5% 10px 5%;  
   }
-
-  /* .nw-69th-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin: 4% 5% 10px 5%;  
-  } */
-
-  /* .nw-69th-pic-3 {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    width: 100%;
-  } */
 
   .nw-69th-pic-1 {
     height: 100%;
