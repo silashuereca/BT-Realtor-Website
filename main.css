@@ -61,7 +61,7 @@ body {
 
 
 #logo {
-  width: 13vw;
+  width: 10vw;
   margin: 10px 0 0 10px;
 }
 
@@ -385,6 +385,7 @@ footer p {
   .menu-bars {
     display: block;
   }
+
   .livable-spaces {
     font-size: 25px;
     font-weight: 300;
