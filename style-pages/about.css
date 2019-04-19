@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
 /*designer and dreamer header text*/
 /* .about-renovating {
@@ -42,16 +42,29 @@
 
 .about-container {
   position: absolute;
-  margin-top: 15em;
+  margin: 15em 2em 15em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-column-gap: 70px;
   width: 100%;
 }
 
 .about-container img {
   width: 100%;
+  height: 700px;
+  object-fit: cover;
 }
+
+.about-me {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.about-heading {
+  font-size: 2em;
+  margin-top: -5px;
+}
+
+
 
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
