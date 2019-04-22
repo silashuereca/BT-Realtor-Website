@@ -105,4 +105,7 @@
   .about-me {
     margin-top: 5%;
   }
+
+.about-container img {
+  height: 300px;
 }

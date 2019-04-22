@@ -123,6 +123,7 @@ header nav ul li a {
 .contact {
   border: 1px solid white;
   padding: 10px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .contact:hover {
