@@ -41,6 +41,36 @@
   color: white;
 }
 
+.prop-containers {
+  margin-top: 15px;
+}
+
+
+.first-prop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0984e3;
+}
+
+.first-prop img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.second-prop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6c5ce7;
+
+}
+
+.second-prop img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 
 .footer-li-prop {
   color: white;
