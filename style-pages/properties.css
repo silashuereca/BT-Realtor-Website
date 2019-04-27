@@ -1,0 +1,60 @@
+
+.prop-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.prop-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.prop-bars {
+  display: none;
+  height: 30px;
+  padding: 1%;
+  padding: 5% 5%;
+  color: black;
+  text-align: right;
+  font-size: 25px;
+  margin: -0.1em 3% 0 0;
+  width: 100%;
+}
+
+.nav-link {
+  color: black;
+}
+
+.prop {
+  border: 1px solid black;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.prop:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.footer-li-prop {
+  color: white;
+}
+
+ .footer-li-contact {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  transition: background-color .2s ease-in-out;
+}
+
+.footer-li-contact:hover {
+  background-color: white;
+  color: black;
+}
+
