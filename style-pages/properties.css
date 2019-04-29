@@ -41,8 +41,12 @@
   color: white;
 }
 
-.prop-containers {
-  margin-top: 15px;
+.prop-container {
+  margin-top: 50px;
+}
+
+.prop-img-containers {
+  margin-top: 20px;
 }
 
 
@@ -50,26 +54,44 @@
   width: 100vw;
   height: 100vh;
   background-color: #0984e3;
+  object-fit: cover;
 }
 
 .first-prop img {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height:100%;
   object-fit: cover;
+}
+
+.button-container {
+  position: absolute;
+  font-size: 50px;
 }
 
 .second-prop {
   width: 100vw;
   height: 100vh;
   background-color: #6c5ce7;
+  object-fit: cover;
 
 }
 
 .second-prop img {
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  height: 100%;
 }
+
+.prop-title {
+  width: 100%;
+  text-align: center;
+}
+
+.prop-about-text {
+  margin-top: 40px;
+}
+
+
+
 
 
 .footer-li-prop {
