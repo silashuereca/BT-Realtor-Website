@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+.about-bars {
+  display: none;
+  height: 30px;
+  padding: 1%;
+  padding: 5% 5%;
+  color: black;
+  text-align: right;
+  font-size: 25px;
+  margin: -0.1em 3% 0 0;
+  width: 100%;
+}
+
 
 .prop-header {
   display: flex;
@@ -42,53 +56,88 @@
 }
 
 .prop-container {
+  position: relative;
   margin-top: 50px;
+  width: 100%;
+  
 }
-
-.prop-img-containers {
-  margin-top: 20px;
-}
-
 
 .first-prop {
-  width: 100vw;
-  height: 100vh;
-  background-color: #0984e3;
-  object-fit: cover;
+  position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 .first-prop img {
   width: 100%;
-  height:100%;
+  height: 40em;
   object-fit: cover;
 }
 
-.button-container {
+.first-prop a {
+  text-decoration: none;
+  padding: 19px 18px;
+  cursor: pointer;
+}
+
+.prev-button-container {
   position: absolute;
-  font-size: 50px;
+  top: 50%;
+  left: 2em;
+  padding: 28px 10px;
+  background-color: black;
+  opacity: 0.5;
+  transition: background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.second-prop {
-  width: 100vw;
-  height: 100vh;
-  background-color: #6c5ce7;
-  object-fit: cover;
-
+.prev-button-container:hover {
+  background-color: black;
+  opacity: unset;
 }
 
-.second-prop img {
-  width: 100vw;
-  height: 100%;
+.next-button-container {
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  padding: 28px 10px;
+  background-color: black;
+  opacity: 0.5;
+  transition: background-color 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.next-button-container:hover {
+  background-color: black;
+  opacity: unset;
+}
+
+.previous {
+  font-size: 40px;
+  color: white;
+}
+
+.next {
+  font-size: 40px;
+  color: white;
+}
+
+
+.prop-about-text {
+  width: 80%;
+  margin: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .prop-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #636e72;
   width: 100%;
   text-align: center;
 }
 
-.prop-about-text {
-  margin-top: 40px;
-}
 
 
 
@@ -110,3 +159,11 @@
   color: black;
 }
 
+
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
+  .prop-bars {
+    display: block;
+  }
+
+}
