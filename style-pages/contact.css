@@ -38,7 +38,7 @@
 .contact-info-container {
   margin-top: 5em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
 }
 
 .image-container img {
