@@ -136,7 +136,7 @@
 
 .prop-title {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 2em;
   color: #636e72;
   width: 80%;
   margin: auto;
@@ -145,9 +145,9 @@
 }
 
 
-
-
-
+footer {
+  margin-top: 10em;
+}
 
 .footer-li-prop {
   color: white;
@@ -171,5 +171,51 @@
   .prop-bars {
     display: block;
   }
+
+  .first-prop {
+    width: 100%;
+  }
+
+  .first-prop img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .first-prop a {
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .prev-button-container {
+    left: 1em;
+    padding: 5px 10px;
+  }
+
+  .next-button-container {
+    right: 1em;
+    padding: 5px 10px;
+  }
+
+  .prop-about-text {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+  }
+
+
+
+
+  .prop-title {
+    font-size: 1em;
+    text-align: center;
+  
+  }
+
+  .prop-about-text {
+    text-align: center;
+  }
+  
 
 }
