@@ -186,6 +186,7 @@ header nav ul li a {
 }
 
 .livable-spaces {
+  color: #636e72;
   font-size: 2em;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -198,6 +199,7 @@ header nav ul li a {
   margin: auto;
   width: 75%;
   text-align: center;
+  color: #636e72;
 }
 
 .intro-three-photos img {
