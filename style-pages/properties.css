@@ -55,6 +55,7 @@
   color: white;
 }
 
+/* This is the first property container which also includes title and about text */
 .prop-container {
   position: relative;
   margin-top: 50px;
@@ -62,6 +63,7 @@
   
 }
 
+/* Contains slideshow images and buttons */
 .first-prop {
   position: relative;
   width: 80%;
@@ -82,7 +84,7 @@
 
 .prev-button-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 2em;
   padding: 28px 10px;
   background-color: black;
@@ -98,7 +100,7 @@
 
 .next-button-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 2em;
   padding: 28px 10px;
   background-color: black;
@@ -131,11 +133,15 @@
   line-height: 30px;
 }
 
+
 .prop-title {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
   color: #636e72;
-  width: 100%;
-  text-align: center;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+
 }
 
 
