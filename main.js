@@ -1,38 +1,32 @@
 
-//Slide in full screen navigation menu overlay
-function openNav() {
-  document.getElementById('myNav').style.width = "100%";
+//Main welcome page automated slider 
+let index = 0;
+let images = [];
+let time = 4000;
+
+
+// Image List 
+images[0] = '../Photos/1833 W. Park Place Photos/03_1833_W_Park_Place_003_mls.jpg';
+images[1] = '../Photos/1833 W. Park Place Photos/04_1833_W_Park_Place_004_mls.jpg';
+images[2] = '../Photos/1833 W. Park Place Photos/05_1833_W_Park_Place_005_mls.jpg';
+
+// Change Image
+function changeImg() {
+  document.slide.className += 'fadeOut';
+  document.slide.src = images[index]
+  setTimeout(function(){
+    document.slide.src = images[index];
+    document.slide.className = "";
+  }, 1000)
+  index++;
+  if (index == images.length){index = 0;} 
+
+  setTimeout(changeImg, time)
+  
 }
-function closeNav() {
-  document.getElementById('myNav').style.width = "0%";
-}
+changeImg();
 
 
-//Select first property slide show img tag
-const propOneContainer = document.getElementById('imagesContainer');
-
-//Array for all first properties images
-let propOneImages = ['../Home Page/1833 W. Park Place Photos/01_1833_W_Park_Place_001_mls.jpg', '../Home Page/1833 W. Park Place Photos/02_1833_W_Park_Place_002_mls.jpg', '../Home Page/1833 W. Park Place Photos/03_1833_W_Park_Place_003_mls.jpg'];
-
-// First array property index variable
-let propOneindex = 0;
-
-
-//This loads the first image in property one slideshow
-function loadFirstImage (img) {
-  propOneContainer.src = img;
-}
-
-//Changes the index number in images container
-function propOneChangeImg(direction) {
-  propOneindex += (direction === 'next' ? 1 : -1)
-  if (propOneindex === propOneImages.length) {propOneindex = 0}
-  else if (propOneindex < 0) {propOneindex = propOneImages.length - 1}
-
-  loadFirstImage(propOneImages[propOneindex])
-}
-// Calls function to load first image in first property slideshow
-loadFirstImage(propOneImages[propOneindex]);
 
 
 
