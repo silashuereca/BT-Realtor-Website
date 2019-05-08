@@ -11,29 +11,29 @@
 
 <body>
   <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
+      <a href="javascript:void(0)" id="closeBtn" class="closeBtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
     <div class="overlay-content">
       <a href="index.html">Home</a>
-      <a href="nav-pages/about.html">About</a>
-      <a href="nav-pages/properties.html">Properties</a>
+      <a href="nav-pages/about.html">Team</a>
       <a href="nav-pages/contact.html">Contact</a>
     </div>
   </div>
+  
+
   <header>
-    
-              <div> <img src="../Photos/Renovare-Logo-Files7.png" alt="logo" id="logo"/>
-              </div>
-             
+      <div class="logo-container"> <img src="../Photos/Renovare-Logo-Files8.png" alt="logo" id="logo"/>
+      </div>
+
     <nav>
               <ul>
-              <li><a class="nav-link" href="index.html">Home</a></li>
-              <li><a class="nav-link" href="nav-pages/about.html">About</a></li>
-              <li><a class="nav-link" href="nav-pages/properties.html">Properties</a></li>
+              <li><a class="nav-link" href="../index.html">Home</a></li>
+              <li><a class="nav-link" href="nav-pages/about.html">Team</a></li>
+              <!-- <li><a class="nav-link" href="nav-pages/properties.html">Properties</a></li> -->
               <li><a class="contact nav-link"  href="nav-pages/contact.html">Contact</a></li>
               </ul>
 
               <div class="menu-bars">
-                  <i class="fa fa-bars" class="icon" onclick="openNav()"></i>
+                  <i class="fa fa-bars" id="icon" onclick="openNav()"></i>
               </div>
 
     </nav>
@@ -43,22 +43,31 @@
   
 
 
-  <div class="intro-three-photos">
-    <div>
-      <img src="../Photos/3128 NW 69th St Photos/17_3128_NW_69th_St17_mls.jpg" alt="living room"/>
-      <h3>Title</h3>
-      <p>Some text explaining the above picture</p>
+  <div class="intro-three-photos-container">
+  <a href="currentListings.html">
+    <div class="three-photos-img-container">      
+        <img src="../Photos/3128 NW 69th St Photos/17_3128_NW_69th_St17_mls.jpg" alt="living room"/>
+          <h3 class="currentListings">Current Listings</h3>
+      
     </div>
-    <div>
-      <img src="../Photos/2929 N. Venice Blvd Photos/27_2929_N_Venice_Blvd-27_mls.jpg" alt="kitchen"/>
-      <h3>Title</h3>
-      <p>Some text explaining the above picture</p>
+  </a>
+
+  <a href="">
+    <div class="three-photos-img-container">
+        <img src="../Photos/2929 N. Venice Blvd Photos/27_2929_N_Venice_Blvd-27_mls.jpg" alt="kitchen"/>
+          <h3 class="underConstruction">Under Construction</h3>
+      
     </div>
-    <div>
-      <img src="../Photos/1833 W. Park Place Photos/16_1833_W_Park_Place_016_mls.jpg" alt="shower"/>
-      <h3>Title</h3>
-      <p>Some text explaining the above picture</p>
+  </a>
+
+  <a href="pastWork.html">
+    <div class="three-photos-img-container">
+      
+        <img src="../Photos/1833 W. Park Place Photos/16_1833_W_Park_Place_016_mls.jpg" alt="shower"/>
+          <h3 class="pastProjects">Past Projects</h3>
     </div>
+  </a>
+
   </div>
 
 
@@ -67,7 +76,7 @@
   
   
 
-  <footer>
+  <!-- <footer>
     <div>
       <ul>
         <li><a class="nav-link" href="index.html">Home</a></li>
@@ -78,8 +87,8 @@
       <p>Renovare Properties LLC</p>
     </div>
 
-  </footer>
+  </footer> -->
 
- <script src="main.js"></script>
+ <script src="../main.js"></script>
 </body>
 </html>

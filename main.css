@@ -32,7 +32,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #b2bec3;
-  opacity: 0.3;
+  opacity: 0.1;
 
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .home1-img-container a .welcome:hover {
-  color: #fab1a0;
+  color: black;
   background-color: white;
 }
 
@@ -106,7 +106,8 @@ body {
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.5s;
+  z-index: 1000;
 }
 
 .overlay-content {
@@ -140,43 +141,41 @@ body {
 }
 
 
-
 #logo {
-  width: 10vw;
-  margin: 10px 0 0 10px;
+  width: 20%;
+  margin-left: 25px;
 }
+
+
 
 .menu-bars {
   display: none;
   height: 30px;
   padding: 1%;
   padding: 5% 5%;
-  color: white;
+  color: black;
   text-align: right;
   font-size: 25px;
-  margin: -0.1em 3% 0 0;
+  margin: -0.1em 4% 0 0;
   width: 100%;
-}
-
-.icon {
   cursor: pointer;
 }
+
+
 
 header {
   display: flex;
   width: 100%;
-  height: 100%;
-  z-index: 2;
 }
 
 header nav {
   width: 100%;
-  height: 100%;
 }
 
 header nav ul {
+  margin-top: 65px;
+  margin-right: 25px;
   text-align: right;
-  margin: 30px 40px 0 0;
 }
 
 header nav ul li {
@@ -196,37 +195,74 @@ header nav ul li a {
   font-weight: 300;
 }
 
-.nav-link:hover {
-  color: gray;
+
+.nav-link:after {
+  content: '';
+  display: block;
+  padding-bottom: 4px;
+  width: 0;
+  border-bottom: 1px solid black;
+  height: 1px;
+  transition: width .5s;
+  z-index: 100;
 }
 
-.contact {
-  border: 1px solid black;
-  padding: 10px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.contact:hover {
-  color: white;
-  background-color: black;
+.nav-link:hover::after {
+  width: 100%;
 }
 
 
-.intro-three-photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 15px;
+.intro-three-photos-container {
+  display: flex;
   margin: auto;
-  width: 75%;
+  margin-top: 3em;
+  width: 100%;
   text-align: center;
   color: #636e72;
 }
 
-.intro-three-photos img {
+.intro-three-photos-container img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
+  border-radius: 3px;
+}
+
+.three-photos-img-container {
+  position: relative;
+  margin: 25px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.three-photos-img-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2d3436;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.three-photos-img-container:hover::after {
+  opacity: 0;
+  z-index: 0;
+}
+
+.intro-three-photos-container .currentListings, .underConstruction, .pastProjects {
+  position: absolute;
+  top: 45%;
+  width: 100%;
   font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  z-index: 300;
 }
 
 
@@ -271,7 +307,7 @@ footer p {
   margin-top: 3em;
 }
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 1105px) {
   #logo {
     width: 13vw;
   }
@@ -288,11 +324,7 @@ footer p {
     display: block;
   }
 
-  .livable-spaces {
-    font-size: 25px;
-    font-weight: 300;
-  }
-  .intro-three-photos {
+  .intro-three-photos-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 15px;
@@ -300,14 +332,7 @@ footer p {
     width: 90%;
   }
 
-  .venice-wrapper {
-    display: inline-block;
-    margin: 4% 5% 0 5%;
-  }
-
-  .venice-pics {
-    margin-top: 10px;
-  }
+  
 
   .home-one-bottom {
     margin: 10px 5% 0 5%;
