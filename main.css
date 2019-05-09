@@ -16,38 +16,18 @@ body {
 }
 
 /* The main loading page with automatic image slider */
-.home1-img-container {
+.autoSlideShow {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
-.home1-img-container::after {
-  content: '';
+.autoSlideShow  div {
+  width: 100%;
+  height: 100vh;
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #b2bec3;
-  opacity: 0.1;
-
 }
 
-.home1-img-container img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  opacity: 1;
-  transition: opacity 1s ease-in;
-  position: relative;
-}
-
-.home1-img-container img.fadeOut {
-  opacity: 0.7;
-}
 
 #renovare {
   color: white;
@@ -63,7 +43,7 @@ body {
   font-weight: 100;
 }
 
-.home1-img-container a {
+.slider a {
   position: absolute;
   font-size: 20px;
   width: 100%;
@@ -78,7 +58,7 @@ body {
   z-index: 1000;
 }
 
-.home1-img-container a .welcome {
+.slider a .welcome {
   font-weight: 300;
   letter-spacing: 2px;
   color: white;
@@ -88,7 +68,7 @@ body {
   transition: background-color 0.2s ease-in-out;
 }
 
-.home1-img-container a .welcome:hover {
+.slider a .welcome:hover {
   color: black;
   background-color: white;
 }
