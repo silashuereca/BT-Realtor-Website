@@ -21,16 +21,14 @@
 //Main welcome page automated slider with Jquery
 $(document).ready(function(){
 
-  $('#autoSlideShow > div:gt(0)').hide();
-
-  setInterval(function(){
-    $('#autoSlideShow > div:first')
-    .fadeOut(300)
-    .next()
-    .fadeIn(300)
+  $('.fadein img:gt(0)').hide();
+	setInterval(function(){
+    $('.fadein :first-child')
+    .fadeOut()
+    .next('img')
+    .fadeIn()
     .end()
-    .appendTo('#autoSlideShow');
-  }, 3000);
+    .appendTo('.fadein');}, 5000);
 
 });
 
