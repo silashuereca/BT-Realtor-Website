@@ -25,7 +25,7 @@ let time = 4000;
 
 
 // Image List 
-images[0] = '../Photos/1833 W. Park Place Photos/03_1833_W_Park_Place_003_mls.jpg';
+images[0] = '../PhotosPhotos/1833 W. Park Place Photos/03_1833_W_Park_Place_003_mls.jpg';
 images[1] = '../Photos/1833 W. Park Place Photos/04_1833_W_Park_Place_004_mls.jpg';
 images[2] = '../Photos/1833 W. Park Place Photos/05_1833_W_Park_Place_005_mls.jpg';
 
