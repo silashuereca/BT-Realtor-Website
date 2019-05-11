@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
-.about-bars {
-  display: none;
-  height: 30px;
-  padding: 1%;
-  padding: 5% 5%;
-  color: black;
-  text-align: right;
-  font-size: 25px;
-  margin: -0.1em 3% 0 0;
-  width: 100%;
-}
-
-
 .prop-header {
   display: flex;
   position: relative;
@@ -45,15 +32,6 @@
   color: black;
 }
 
-.prop {
-  border: 1px solid black;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.prop:hover {
-  background-color: black;
-  color: white;
-}
 
 /* This is the first property container which also includes title and about text */
 .prop-container {
@@ -155,15 +133,24 @@ footer {
 
  .footer-li-contact {
   color: white;
-  border: 1px solid white;
-  padding: 10px;
-  transition: background-color .2s ease-in-out;
+
 }
 
-.footer-li-contact:hover {
-  background-color: white;
-  color: black;
+.footer-li-prop:after {
+  content: '';
+  display: block;
+  padding-bottom: 4px;
+  width: 0;
+  border-bottom: 1px solid white;
+  height: 1px;
+  transition: width .5s;
+  z-index: 100;
 }
+
+.footer-li-prop:hover::after {
+  width: 100%;
+}
+
 
 
 
