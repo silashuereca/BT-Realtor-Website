@@ -1,19 +1,19 @@
-// //Selecting the closebtn for the overlay menu
-// let navObj = {
-//   overlayNavContainer: document.getElementById('myNav'),
-//   menuBars: document.getElementById('icon')
-// }
+//Selecting the closebtn for the overlay menu
+let navObj = {
+  overlayNavContainer: document.getElementById('myNav'),
+  menuBars: document.getElementById('icon')
+}
 
 
-// function openNav() {
-//   navObj.overlayNavContainer.style.width = '100%';
-//   navObj.menuBars.style.display = 'none';
-// }
+function openNav() {
+  navObj.overlayNavContainer.style.width = '100%';
+  navObj.menuBars.style.display = 'none';
+}
 
-// function closeNav() {
-//   navObj.overlayNavContainer.style.width = '0';
-//   navObj.menuBars.style.display = 'block';
-// }
+function closeNav() {
+  navObj.overlayNavContainer.style.width = '0';
+  navObj.menuBars.style.display = 'block';
+}
 
 
 

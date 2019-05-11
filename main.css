@@ -16,18 +16,43 @@ body {
 }
 
 /* The main loading page with automatic image slider */
-.autoSlideShow {
+.index-container {
+  width: 100%;
+  height: 100vh;
   position: relative;
-  width: 100%;
-  height: 100vh;
 }
 
-.autoSlideShow  div {
+.index-container img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
+}
+
+.index-container a {
   position: absolute;
+  top: 55%;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 
+.index-container .welcome {
+  z-index: 999;
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  color: black;
+  transition: background-color 0.2s ease;
+  font-weight: 100;
+}
+
+.index-container .welcome:hover {
+  background-color: white;
+  color:  #fab1a0;
+}
 
 #renovare {
   color: white;
@@ -347,8 +372,22 @@ footer p {
   
 }
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 900px) {
-  .britta-abode {
-    font-size: 6vw;
+/* This is for the first home page responsiveness */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  #renovare {
+    top: 35%;
+    font-size: 15vh;
+  }
+
+  .index-container .welcome {
+    font-size: 20px;
   }
 }
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 300px) {
+  #renovare {
+    top: 40%;
+    font-size: 10vh;
+  }
+}
+
