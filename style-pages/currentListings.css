@@ -104,17 +104,19 @@
 
 
 .prop-about-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
   width: 80%;
   margin: auto;
-  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
   line-height: 30px;
 }
 
 
-.prop-title {
+.prop-title h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2em;
+  font-weight: 300;
   color: #636e72;
   width: 80%;
   margin: auto;

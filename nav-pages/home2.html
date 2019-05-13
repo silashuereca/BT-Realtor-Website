@@ -6,6 +6,7 @@
   <title>Renovator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../animate.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
@@ -14,23 +15,26 @@
   <div id="myNav" class="overlay">
       <a href="javascript:void(0)" id="closeBtn" class="closeBtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
     <div class="overlay-content">
-      <a href="index.html">Home</a>
-      <a href="nav-pages/about.html">Team</a>
-      <a href="nav-pages/contact.html">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">Team</a>
+        <a href="properties.html">Current Listings</a>
+        <a href="" >Under Construction</a>
+        <a href="pastWork.html" >Past Projects</a>
+        <a href="contact.html">Contact</a>
     </div>
   </div>
   
 
-  <header>
+  <header class="header animated fadeIn">
       <div class="logo-container"> <img src="../Photos/Renovare-Logo-Files8.png" alt="logo" id="logo"/>
       </div>
 
     <nav>
               <ul>
               <li><a class="nav-link" href="../index.html">Home</a></li>
-              <li><a class="nav-link" href="nav-pages/about.html">Team</a></li>
+              <li><a class="nav-link" href="about.html">Team</a></li>
               <!-- <li><a class="nav-link" href="nav-pages/properties.html">Properties</a></li> -->
-              <li><a class="contact nav-link"  href="nav-pages/contact.html">Contact</a></li>
+              <li><a class="contact nav-link"  href="contact.html">Contact</a></li>
               </ul>
 
               <div class="menu-bars">
@@ -46,7 +50,7 @@
 
   <div class="intro-three-photos-container">
   <a href="properties.html">
-    <div class="three-photos-img-container">      
+    <div class="three-photos-img-container animated fadeIn">      
         <img src="../Photos/3128 NW 69th St Photos/17_3128_NW_69th_St17_mls.jpg" alt="living room"/>
           <h3 class="currentListings">Current Listings</h3>
       
@@ -54,7 +58,7 @@
   </a>
 
   <a href="">
-    <div id="instaContainer" class="three-photos-img-container">
+    <div id="instaContainer" class="three-photos-img-container animated fadeIn">
         <img class="construction-image" src="../Photos/2929 N. Venice Blvd Photos/27_2929_N_Venice_Blvd-27_mls.jpg" alt="kitchen"/>
 
           <h3 id="underConstruction" class="underConstruction">Under Construction</h3>
@@ -64,7 +68,7 @@
   </a>
 
   <a href="pastWork.html">
-    <div class="three-photos-img-container">
+    <div class="three-photos-img-container animated fadeIn">
       
         <img src="../Photos/1833 W. Park Place Photos/16_1833_W_Park_Place_016_mls.jpg" alt="shower"/>
           <h3 class="pastProjects">Past Projects</h3>

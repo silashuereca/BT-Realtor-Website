@@ -218,7 +218,7 @@ header nav ul li a {
 
 
 .intro-three-photos-container {
-  display: flex;
+  /* display: flex; */
   margin: auto;
   margin-top: 3em;
   width: 100%;
@@ -236,7 +236,7 @@ header nav ul li a {
 .three-photos-img-container {
   position: relative;
   margin: 25px;
-  height: 400px;
+  height: 300px;
   cursor: pointer;
 }
 
@@ -336,6 +336,17 @@ footer div ul li a {
 
 footer p {
   margin-top: 3em;
+}
+
+
+/* These are all of the animation properties */
+
+.header {
+  animation-duration: 3s;
+}
+
+.three-photos-img-container {
+  animation-duration: 4s;
 }
 
 @media only screen and (min-device-width: 200px) and (max-device-width: 1105px) {
