@@ -43,16 +43,17 @@ body {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 25px;
-  color: black;
-  transition: background-color 0.2s ease;
+  border-radius: 10px;
+  color:  #fab1a0;
+  background-color: white;
   font-weight: 100;
+  transition: border-radius .2s ease;
 }
 
 .index-container .welcome:hover {
-  background-color: white;
-  color:  #fab1a0;
+  border-radius: 25px;
 }
+
 
 #renovare {
   color: white;
@@ -90,7 +91,6 @@ body {
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 20px;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .slider a .welcome:hover {
@@ -288,6 +288,14 @@ header nav ul li a {
   z-index: 300;
 }
 
+.review-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px; 
+}
+
+
+
 
 footer {
   margin-top: 4em;
@@ -354,29 +362,7 @@ footer p {
     margin: auto;
     width: 90%;
   }
-
-  
-
-  .home-one-bottom {
-    margin: 10px 5% 0 5%;
-  }
-
-  .nw-69th-wrapper {
-    display: inline-block;
-    margin: 4% 5% 10px 5%;  
-  }
-
-  .nw-69th-pic-1 {
-    height: 100%;
-  }
-  
-  .nw-69th-pic-2 {
-    height: 100%;
-  }
-
-  .nw-69th {
-    margin-top: 10px;
-  }
+ 
 
   footer div ul {
     display: block;
@@ -402,7 +388,26 @@ footer p {
   }
 }
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 300px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 350px) {
+
+  .intro-three-photos-container .currentListings, .underConstruction, .pastProjects {
+    position: absolute;
+    top: 28%;
+    width: 100%;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    z-index: 300;
+  }
+
+  .three-photos-img-container {
+    position: relative;
+    margin: 25px;
+    height: 250px;
+    cursor: pointer;
+  }
+
   #renovare {
     top: 40%;
     font-size: 10vh;
