@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
-.prop-header {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
 
-.prop-header {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
 
 .prop-bars {
   display: none;
@@ -36,7 +22,7 @@
 /* This is the first property container which also includes title and about text */
 .prop-container {
   position: relative;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
   
 }
@@ -156,10 +142,7 @@ footer {
 
 
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 1010px) {
-  .prop-bars {
-    display: block;
-  }
+@media only screen and (max-device-width: 1010px) {
 
   .first-prop {
     width: 100%;
@@ -193,11 +176,13 @@ footer {
     overflow-y: auto;
   }
 
-
+  .prop-title h2 {
+    width: 95%;
+  }
 
 
   .prop-title {
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
   
   }
@@ -207,4 +192,16 @@ footer {
   }
   
 
+}
+
+@media only screen and (max-device-width: 812px) {
+  .prop-title {
+    font-size: 1em;
+    text-align: center;
+  
+  }
+
+  .prop-title h2 {
+    width: 95%;
+  }
 }

@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 /*font-family: 'Montserrat', sans-serif; */
-@import url('https://fonts.googleapis.com/css?family=Rubik:300');
-/*font-family: 'Rubik', sans-serif;*/
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
 /*font-family: 'Lato', sans-serif*/
 @import url('https://fonts.googleapis.com/css?family=Allura');
 
 @import url('https://fonts.googleapis.com/css?family=Assistant:200,400');
 /* footer text */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 
 body {
   margin: 0;
@@ -44,7 +43,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
-  color:  #fab1a0;
+  color:  black;
   background-color: white;
   font-weight: 100;
   transition: border-radius .2s ease;
@@ -72,7 +71,7 @@ body {
 .slider a {
   position: absolute;
   font-size: 20px;
-  width: 100%;
+  width: 100%; 
   margin: auto;
   top: 55%;
   text-align: center;
@@ -115,54 +114,72 @@ body {
   z-index: 1000;
 }
 
+.overlay #closeBtn {
+  text-decoration: none;
+  color: white;
+}
+
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
-  text-align: center;
+  margin: auto;
   margin-top: 30px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  overflow-x: hidden;
+
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
+
+.overlay-content ul {
   display: block;
-  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.overlay a:hover .overlay a:focus {
+.overlay-content ul li {
+  list-style: none;
+  margin: 0 0 30px 15px;
+  padding: 15px;
+}
+
+.overlay-content ul li a {
+  text-decoration: none;
+  cursor: pointer;
   color: white;
-}
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  
+} 
 
-.overlay .closeBtn {
+
+.overlay #closeBtn {
   position: absolute;
   top: 20px;
   right: 40px;
   font-size: 50px;
 }
 
-
 #logo {
-  width: 20%;
-  margin-left: 25px;
+  width: 30%;
+  display: block;
+  margin-top: -20px;
 }
 
 
 
 .menu-bars {
-  display: none;
   height: 30px;
-  padding: 1%;
-  padding: 5% 5%;
+  right: 0;
   color: black;
   text-align: right;
   font-size: 25px;
-  margin: -0.1em 4% 0 0;
-  width: 100%;
   cursor: pointer;
 }
 
@@ -170,17 +187,20 @@ body {
 
 header {
   display: flex;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 header nav {
   width: 100%;
+  margin: auto;
 }
 
-header nav ul {
-  margin-top: 65px;
-  margin-right: 25px;
+/* header nav ul {
+  margin-top: 40px;
   text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
@@ -198,36 +218,21 @@ header nav ul li a {
   font-size: 15px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-}
+} */
 
 
-.nav-link:after {
-  content: '';
-  display: block;
-  padding-bottom: 4px;
-  width: 0;
-  border-bottom: 1px solid black;
-  height: 1px;
-  transition: width .5s;
-  z-index: 100;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-
+/* This section contains the second homepage html file */
 .intro-three-photos-container {
-  /* display: flex; */
+  display: flex;
   margin: auto;
-  margin-top: 3em;
-  width: 100%;
+  margin-top: 100px;
+  width: 90%;
   text-align: center;
   color: #636e72;
 }
 
 .intro-three-photos-container img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 3px;
@@ -235,8 +240,7 @@ header nav ul li a {
 
 .three-photos-img-container {
   position: relative;
-  margin: 25px;
-  height: 300px;
+  height: 600px;
   cursor: pointer;
 }
 
@@ -264,8 +268,10 @@ header nav ul li a {
   position: absolute;
   display: block;
   top: 0;
+  right: 0;
   left: 0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   height: 100%;
   background-color: #2d3436;
   opacity: 0.7;
@@ -288,12 +294,30 @@ header nav ul li a {
   z-index: 300;
 }
 
-.review-container {
-  width: 100%;
+.testimonials-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   text-align: center;
+  color: #636e72;
+  border-bottom: 1px solid #636e72;
+}
+
+.review-container {
+  width: 90%;
+  margin: auto;
+  text-align: left;
   margin-top: 40px; 
 }
 
+.review-container h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: #636e72;
+}
 
 
 
@@ -339,21 +363,24 @@ footer p {
 }
 
 
-/* These are all of the animation properties */
+/* These are all animation properties */
 
-.header {
-  animation-duration: 3s;
-}
-
-.three-photos-img-container {
+body {
   animation-duration: 4s;
 }
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 1105px) {
+@media only screen and (max-device-width: 1105px) {
   #logo {
-    width: 13vw;
+    margin-top: 0;
+    width: 30vw;
   }
+
   header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  /* header {
     height: 100%;
   }
   header nav {
@@ -364,7 +391,7 @@ footer p {
   }
   .menu-bars {
     display: block;
-  }
+  } */
 
   .intro-three-photos-container {
     display: grid;
@@ -372,6 +399,13 @@ footer p {
     grid-gap: 15px;
     margin: auto;
     width: 90%;
+    margin-top: 100px;
+  }
+
+  .three-photos-img-container {
+    position: relative;
+    height: 500px;
+    cursor: pointer;
   }
  
 
@@ -387,8 +421,8 @@ footer p {
   
 }
 
-/* This is for the first home page responsiveness */
-@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+/* This is for the first the index.html file responsiveness */
+@media only screen and (max-device-width: 500px) {
   #renovare {
     top: 35%;
     font-size: 15vh;
@@ -399,7 +433,7 @@ footer p {
   }
 }
 
-@media only screen and (min-device-width: 200px) and (max-device-width: 350px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 812px) {
 
   .intro-three-photos-container .currentListings, .underConstruction, .pastProjects {
     position: absolute;
@@ -414,7 +448,6 @@ footer p {
 
   .three-photos-img-container {
     position: relative;
-    margin: 25px;
     height: 250px;
     cursor: pointer;
   }

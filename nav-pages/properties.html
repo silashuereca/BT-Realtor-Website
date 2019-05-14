@@ -7,35 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="../main.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../style-pages/currentListings.css">
+  <link rel="stylesheet" href="../animate.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="animated fadeIn">
   <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
+      <a href="javascript:void(0)" id="closeBtn" onclick="closeNav()" style="cursor: pointer">&times;</a>
     <div class="overlay-content">
-        <a href="../index.html">Home</a>
-        <a href="about.html">Team</a>
-        <a href="properties.html">Current Listings</a>
-        <a href="" >Under Construction</a>
-        <a href="pastWork.html" >Past Projects</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+        <li><a href="home2.html">Home</a></li>
+              <li><a  href="about.html">Team</a></li>
+              <li><a  href="properties.html">Current Listings</a></li>
+              <li><a  href="">Under Construction</a></li>
+              <li><a  href="pastWork.html">Past Projects</a></li>
+              <li><a  href="contact.html">Contact</a></li>
+              </ul> 
     </div>
   </div>
-  <header class="prop-header">
+  <header class="header">
       <!-- Logo Photo -->
       <div class="logo-container"> <img src="../Photos/Renovare-Logo-Files8.png" alt="logo" id="logo"/>
       </div>
    
 <nav>
-    <ul>
+    <!-- <ul>
     <li><a class="home nav-link" href="../nav-pages/home2.html">Home</a></li>
     <li><a class="nav-link" href="about.html">About</a></li>
     <li><a class="prop contact nav-link" href="contact.html">Contact</a></li>
-    </ul>
-    <!-- This is the menu bars that pop up when screen is shrunk -->
-    <div class="prop-bars menu-bars">
-        <i class="fa fa-bars" class="about icon" onclick="openNav()"></i>
+    </ul> -->
+    <div class="menu-bars">
+        <i class="fa fa-bars" id="icon" onclick="openNav()"></i>
     </div>
 
 </nav>
