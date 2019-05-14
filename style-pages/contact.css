@@ -20,7 +20,6 @@
   padding-left: 20px;
   letter-spacing: 1px;
   line-height: 30px;
-  overflow: auto;
   color: #636e72;
   border-left: 2px solid gray;
 }
@@ -87,7 +86,6 @@ footer .contact:hover {
 @media only screen and (max-device-width: 768px) {
   .image-container img {
     display: block;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
