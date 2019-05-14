@@ -155,8 +155,11 @@ body {
   font-size: 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  
 } 
+
+.overlay-content ul li a:hover {
+  color: #7f8fa6;
+}
 
 
 .overlay #closeBtn {
